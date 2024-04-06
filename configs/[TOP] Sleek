@@ -1,0 +1,63 @@
+/* ---- 💫 https://github.com/JaKooLit 💫 ---- */
+// Sleek
+
+{
+"include": "~/.config/waybar/modules",
+"layer": "top",
+"position": "top",
+"height": 14,
+"margin-left": 10,
+"margin-right": 10,
+"margin-top": 2,
+	
+"modules-left": [
+	"custom/swaync",
+	"custom/separator#dot-line",
+	"clock",
+	"custom/separator#blank_2",
+	"network#speed",
+	"custom/separator#blank_2",
+	"hyprland/window"
+],
+
+"modules-center": [		
+	"hyprland/workspaces#pacman"	
+],
+		
+"modules-right": [
+	"custom/separator#dot-line",
+    "cpu",
+    "temperature",
+	"custom/separator#dot-line",
+	"bluetooth",
+	"custom/separator#dot-line", 
+    "pulseaudio",
+    "custom/separator#dot-line",
+	"pulseaudio#microphone",
+	"custom/separator#dot-line", 
+	"tray",
+    "mpris",
+	"custom/separator#dot-line",
+	"custom/keyboard",
+	"custom/separator#dot-line", 
+	"battery",
+	"custom/separator#dot-line",
+	"custom/power",
+    					
+	],
+
+
+// Additional format / customize modules
+
+"custom/power": {
+	"format": " ",
+	"icon-size": 20,
+	"tooltip": false,
+},
+	
+"clock": {
+	//"format": "{:%I:%M %p - %d/%b}", //for AM/PM
+    "format": "{:%H:%M - %d/%b}", // 24H
+	"tooltip": false
+},
+}
