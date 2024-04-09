@@ -25,6 +25,8 @@
 ],
 		
 "modules-right": [
+	"custom/cava_mviz",
+	"custom/separator#blank_2",
 	"custom/separator#dot-line",
     "cpu",
     "temperature",
